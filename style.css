@@ -1,0 +1,564 @@
+/*Hierarquia de seletores*/
+/*IDS: IDs são usods quando eu quero dar uma característica para um ÚNICO COMPONENTE, ela só pode ser uma por elemento*/
+/*CLASSES:Quando eu quero promover uma alteração em um conjunto de componentes eu uso uma classe para atribuir para mais de um componente,  mas ainda assim tenho que colocar dentro de cada elemento, a aclasse não pega tudo que está abaixo dela*/
+/*TAG: é a mais macro que tem para você atribuir essa característica para todas as Tags da página*/
+/*geralmente o mais específico é privilegiado*/
+
+/*Flex box
+Trata-se de uma ferramenta para trabalhar o posicionamento de uma forma mais eficiante.
+Quando o componente é flex ele passa a posicionar-se em relação a página inteira.
+Todos esses links sãocomponentes filhos do componente menu.
+
+*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Poppins&display=swap');
+
+/* O link tem uma cor específica, a configuração de fonte tem que ter um direcionamento epecifico, por isso fazemos a referência abaixo*/
+
+#principal {
+    width: 100%;
+    height: 5em;
+    background-color: #303030;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    left: 0px;
+    right: 0px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+a { /*separa hierarquia por espaços */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600; /*espesura da fonte*/
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    height: 1em;
+    margin:0%;
+
+
+  
+
+}
+
+button {
+
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+    background: #0C70F2;
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-radius: 10%;
+    padding: 0px;
+
+}
+
+body {
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    margin: 0px; 
+}
+
+#centro {
+
+    margin-left: 15%;
+    margin-right: 15%;
+ 
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0em 1em 0em 1em;
+    line-height: 60px;
+
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 97px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+label {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;    
+    color: #FFFFFF;
+
+}
+
+input {
+    width: 630px;
+    height: 56px;
+    left: 405px;
+    top: 860px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(57, 57, 57, 0.5);
+}
+
+.form {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 630px;
+}
+
+.checkbox-items label{
+    font-size:24px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+input.checkbox-items {
+
+    margin: 0px 0px 0px 0px;
+    width: 20px;
+    height: 22px;
+
+}
+
+  
+
+#cadastrar {
+
+    width: 630px;
+    height: 56px;
+    left: 405px;
+    top: 1465px;
+    margin: 20px 0px 20px 0px;
+    background: rgba(12, 112, 242, 0.9);
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+
+}
+
+#cadastrar:hover {
+    cursor:pointer;
+    transform: translateY(-10);
+    box-shadow: #ffffff;
+}
+
+#rodape {
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    width: 100%;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+nav {
+
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+
+h3 {
+   
+    font-size: 25px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-weight: bold;
+    width: 176px;
+    height: 35px;
+    background: #303030;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 1em 0em 0em 0em;
+}
+
+#escolas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0em 0em 2em;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0em 1.7em 2em;
+}
+
+#descritivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0em 0em 2em;
+}
+
+h4 {
+    Font-family: Inter;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 446px;
+}
+
+#regras  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1em;
+} 
+
+#regras a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0em 0em 1.3em 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+p {
+    Font-family: Inter;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    padding: 0.2em;
+    
+}
+
+
+
+#rodape ul li{
+
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#rodape ul {
+ 
+    padding: 0%;
+}
+
+@media only screen and (max-width: 350px) {
+
+    #principal {
+        
+        height: 14em;
+        flex-direction: column;
+        font-size: 12px;
+        
+    }
+
+    #principal a {
+        font-size: 18px;
+    }
+
+    button {
+        width: 140px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+        word-spacing: 0%;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+        word-spacing: 0%;
+        line-height: 25px;
+        width: 250px;
+        text-align: center;
+        margin: 1em;
+    }
+
+    form {
+        width: 100px; 
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+
+    label {
+        width:250px;
+        font-size: 18px;
+
+    }
+
+    input {
+        width:250px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 18px;
+    }
+
+  
+    #cadastrar {
+
+        width: 200px;
+        font-size:20px;
+    
+    }
+    
+    .checkbox-items {
+        width: 240px;
+    }
+    
+    .checkbox-items label{
+        font-size:16px;
+        padding: 2px;
+        line-height: 15px;
+        
+    }
+
+    nav {
+
+        display: grid;
+        grid-auto-flow: row;
+        text-align: center;
+    }
+
+    #escolas {
+        margin: 0em 0em 0em 0em;
+    }
+    
+    #sobre {
+        margin: 0em 0em 1em 0em;
+    }
+    
+    #descritivo {
+        margin: 0em 0em 0em 0em;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1em 0em 0em 0.5em;
+
+    }
+    
+    h4 {
+        font-size: 15px;
+        width: 240px;
+        line-height: 16px;
+
+    }
+    
+    #regras a {
+        font-size: 15px;
+        line-height: 16px;
+        padding-right: 10px;
+        margin-left: 1em;
+
+    }
+
+    p {
+        font-size: 20px;
+        
+    }
+    
+
+}
+
+@media only screen and (min-width: 351px) and (max-width: 450px) {
+    #principal {
+        
+        height: 12em;
+        flex-direction: column;
+        
+    }
+
+    #principal a {
+        font-size: 24px;
+    }
+
+    button {
+        width: 200px;
+        height:50px;
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 45px;
+        word-spacing: 0%;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+        word-spacing: 0%;
+        line-height: 25px;
+        width: 380px;
+        text-align: center;
+        margin: 0em;
+    }
+
+    form {
+        width: 200px; 
+        margin-left: 10%;
+        margin-right: 25%;
+    }
+
+    label {
+        width:350px;
+        font-size: 24px;
+        
+
+    }
+
+    input {
+        width:350px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 20px;
+    }
+
+  
+    #cadastrar {
+
+        width: 200px;
+        font-size:24px;
+    
+    }
+    
+    .checkbox-items {
+        width: 350px;
+    }
+    
+    .checkbox-items label{
+        font-size:24px;
+        padding: 2px;
+        line-height: 20px;
+    }
+
+    nav {
+
+        display: grid;
+        grid-auto-flow: row;
+        text-align: center;
+    }
+
+    #escolas {
+        margin: 0em 0em 0em 0em;
+    }
+    
+    #sobre {
+        margin: 0em 0em 1em 0em;
+    }
+    
+    #descritivo {
+        margin: 0em 0em 0em 0em;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1em 0em 0em 0.5em;
+        font-size: 25px;
+
+    }
+    
+    h4 {
+        font-size: 20px;
+        width:340px;
+        line-height: 25px;
+
+    }
+    
+#regras {
+    margin-left: 2em;
+}
+
+    #regras a {
+        font-size: 20px;
+        line-height: 25px;
+        padding-right: 10px;
+
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 25px;
+
+        
+    }
+
+    #rodape ul li a{
+
+        font-size: 24px;
+    }
+    
+
+}
+
